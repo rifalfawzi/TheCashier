@@ -13,6 +13,7 @@ untuk menjual sebuah barang/jasa
 Diawali dengan "MainWindows" pada class "MainWindows.xaml.cs" kita mendeklarasikan sebuah fungsi calculator
 
 ....csharp
+
 public partial class MainWindow : Window
     {
         private Calculator calculator;
@@ -42,6 +43,7 @@ public partial class MainWindow : Window
 kemudian Class Item "Item.cs"
 
 ...csharp
+
 class Item
     {
         private int id;
@@ -85,6 +87,7 @@ class Item
 ....
 Kemudian ini adalah logika perhitungannya "Calculator.cs"
 ...csharp
+
  class Calculator
     {
         private List<Item> ListItem;
