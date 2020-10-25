@@ -1,5 +1,4 @@
 #Program Calculator
-
 Aplikasi ini berfungsi untuk menambahkan sebuah item, biasanya di gunakan
 untuk menjual sebuah barang/jasa
 
@@ -12,9 +11,8 @@ untuk menjual sebuah barang/jasa
 
 Diawali dengan "MainWindows" pada class "MainWindows.xaml.cs" kita mendeklarasikan sebuah fungsi calculator
 
-....csharp
-
-public partial class MainWindow : Window
+```csharp
+	public partial class MainWindow : Window
     {
         private Calculator calculator;
         public MainWindow()
@@ -38,14 +36,12 @@ public partial class MainWindow : Window
             totalLabel.Content = string.Format("Rp {0}", total);
 
             listBox.Items.Refresh();
-....
 
-kemudian Class Item "Item.cs"
-
-...csharp
-
+```
 class Item
-    {
+
+```csharp
+{
         private int id;
         public string title { get; set; }
         public int quantity { get; set; }
@@ -84,10 +80,12 @@ class Item
         {
             return type;
         }
-....
-Kemudian ini adalah logika perhitungannya "Calculator.cs"
-...csharp
+```
 
+
+Kemudian ini adalah logika perhitungannya "Calculator.cs"
+
+```csharp
  class Calculator
     {
         private List<Item> ListItem;
@@ -110,5 +108,5 @@ Kemudian ini adalah logika perhitungannya "Calculator.cs"
         {
             return ListItem;
         }
-...
+```
 
